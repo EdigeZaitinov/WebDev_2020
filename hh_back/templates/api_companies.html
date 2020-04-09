@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/api_companies.css'%}">
+    <title>api</title>
+</head>
+<body >
+    <div class="table">
+        <table class="companies">
+            <tr>
+                <td>Компания</td><td>Описание</td><td>Город</td><td>Адрес</td>
+            </tr>
+            {%for c in companies%}
+                <tr>
+                <td>{{c.name}}</td><td>{{c.description}}</td><td>{{c.city}}</td><td>{{c.address}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+    </div>
+</body>

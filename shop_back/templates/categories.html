@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>api categories</title>
+</head>
+<body>
+<ul>
+    {%for p in categories%}
+    <li><h3>id={{p.id}} name={{p.name}}</h3></li>
+    {%endfor%}
+</ul>
+</body>

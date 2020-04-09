@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/api.css'%}">
+    <title>api</title>
+</head>
+<body>
+<h1 class="my_name">Hello {{name}} {{surname}}</h1>
+<ul>
+    <li><a href="{%url 'vacancies'%}">Вакансии</a></li>
+    <li><a href="{%url 'companies'%}">Компании</a></li>
+    <li><a href="{%url 'top_ten'%}">Топ 10</a></li>
+</ul>
+</body>

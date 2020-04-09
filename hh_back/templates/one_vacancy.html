@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/one_vacancy.css'%}">
+    <title>api</title>
+</head>
+
+<body>
+    <div class="table">
+        <table class="vacancies">
+            <tr>
+                <td>Название</td>
+                <td>Описание</td>
+                <td>Зарплата</td>
+                <td>компания</td>
+            </tr>
+            <tr>
+                <td>{{v.name}}</td>
+                <td>{{v.description}}</td>
+                <td>{{v.salary}}$</td>
+                <td>{{c.name}}</td>
+            </tr>
+        </table>
+    </div>
+</body>

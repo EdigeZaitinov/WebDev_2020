@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="nav_bar">
+        <h3 class="nav">
+            <button class="nav_link" routerLink="/AAGF">Home</button>
+            <button class="nav_link" routerLink="/AAGF/games">Games</button>
+            <button class="nav_link" routerLink="/AAGF/films">Films</button>
+            <button class="nav_link" routerLink="/AAGF/about_us">About us</button>
+            <button class="logout" routerLink="/">Logout</button>
+        </h3>
+    </div>
+    <div class="games_page">
+        <div class="gamesList">
+            <table >
+                <tr *ngFor="let games of gamesall; let i = index" >
+                    <td>
+                        <img width="200px" src="{{games.link}}">
+                    </td>
+                    <td>
+                        <h3>{{games.name}}</h3>
+                        <p>{{games.description}}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="gamesNav">
+            <button (click)="btn_games2020()" class="gamesButton">Игры 2020 года</button>
+            <br>
+            <button (click)="btn_games2019()" class="gamesButton">Игры 2019 года</button>
+            <br>
+            <button (click)="btn_games2018()" class="gamesButton">Игры 2018 года</button>
+            <br>
+            <button (click)="btn_games2017()" class="gamesButton">Игры 2017 года</button>
+        </div>
+    </div>
+</div>

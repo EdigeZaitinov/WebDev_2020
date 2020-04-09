@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/api.css'%}">
+    <title>api</title>
+</head>
+<body>
+<h1 class="zagolovok">Hello {{name}}!</h1>
+<h2 class="street">you live at {{street.0}} {{street.1}}/{{street.2}}</h2>
+<img class="image_ualihanov" src="{% static 'images/ualihanov.gif'%}">
+</body>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>api products</title>
+</head>
+<body>
+<ul>
+    {%for p in products%}
+    <li><h3>id={{p.id}} name={{p.name}} price={{p.price}} tenge, description={{p.description}} count={{p.count}}</h3></li>
+    {%endfor%}
+</ul>
+</body>

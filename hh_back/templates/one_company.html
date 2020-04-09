@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/one_company.css'%}">
+    <title>api</title>
+</head>
+<body >
+    <div class="table">
+        <table class="one_company">
+            <tr>
+                <td>Компания</td><td>{{c.name}}</td>
+            </tr>
+            <tr>
+                <td>Описание</td><td>{{c.description}}</td>
+            </tr>
+            <tr>
+                <td>Город</td><td>{{c.city}}</td>
+            </tr>
+            <tr>
+                <td>Адрес</td><td>{{c.address}}</td>
+            </tr>
+        </table>
+    </div>
+</body>

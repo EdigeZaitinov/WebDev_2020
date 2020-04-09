@@ -1,0 +1,11 @@
+.table{
+    position: absolute;
+    width: 100%;
+}
+.one_company{
+    font-family: cursive;
+    margin: auto;
+}
+td{
+    border: solid 1px silver;
+}

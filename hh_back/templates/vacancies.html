@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/vacancies.css'%}">
+    <title>api</title>
+</head>
+
+<body>
+    <div class="table">
+        <table class="vacancies">
+            <tr>
+                <td>Название</td>
+                <td>Описание</td>
+                <td>Зарплата</td>
+                <td>компания</td>
+            </tr>
+            {% for v in vacancies%}
+            <tr>
+                <td>{{v.name}}</td>
+                <td>{{v.description}}</td>
+                <td>{{v.salary}}$</td>
+                {%for c in companies%}
+                {% if v.company_id == c.id%}<td>{{c.name}}</td>{% endif %}
+                {%endfor%}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
