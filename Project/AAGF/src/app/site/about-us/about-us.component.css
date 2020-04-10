@@ -1,16 +1,18 @@
-.nav_bar{
+.nav_bar {
+    z-index: 2;
     height: 80px;
-    background-color:rgb(36, 39, 39);
+    background-color: rgb(36, 39, 39);
     position: absolute;
     margin-left: -10px;
     width: 100%;
     padding-right: 10px;
-
 }
-.nav{
+
+.nav {
     margin-left: 20%;
 }
-.nav_link{
+
+.nav_link {
     border-radius: 5px;
     background-color: lightseagreen;
     height: 35px;
@@ -18,11 +20,42 @@
     margin-left: 30px;
     font-weight: bold;
 }
-.logout{
+
+.logout {
     float: right;
     width: 150px;
     font-weight: bold;
     height: 45px;
     border-radius: 20px;
-    background-color:rgb(0, 119, 255);
+    background-color: rgb(0, 119, 255);
+}
+
+.nav_link:hover {
+    background-color: tomato;
+}
+
+.aboutUs {
+    width: 100%;
+}
+
+.text_about_me {
+    z-index: 2;
+    position: absolute;
+    margin-left: 82%;
+    margin-top: 80px;
+    height: 200px;
+    width: 15%;
+    background-image: url(https://st2.depositphotos.com/1520587/11337/i/950/depositphotos_113378588-stock-photo-drops-of-water-on-a.jpg);
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img {
+    z-index: 1;
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    margin-left: -10px;
 }
