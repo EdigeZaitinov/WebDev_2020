@@ -12,12 +12,16 @@ import { FilmsComponent } from './site/films/films.component';
 import { GamesComponent } from './site/games/games.component';
 import { AboutUsComponent } from './site/about-us/about-us.component';
 import { GamesService } from './games.service';
+import { GameComponent } from './site/games/game/game.component';
+import { FilmComponent } from './site/films/film/film.component';
 
 const appRoutes:Routes=[
   {path:'',component:LoginComponent},
   {path:'AAGF',component:SiteComponent},
   {path:'AAGF/games',component:GamesComponent},
+  {path:'AAGF/games/:gameName',component:GameComponent},
   {path:'AAGF/films',component:FilmsComponent},
+  {path:'AAGF/films/:filmName',component:FilmComponent},
   {path:'AAGF/about_us',component:AboutUsComponent}
 ]
 
@@ -28,7 +32,9 @@ const appRoutes:Routes=[
     SiteComponent,
     FilmsComponent,
     GamesComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    GameComponent,
+    FilmComponent
   ],
   imports: [
     BrowserModule,

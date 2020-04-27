@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="nav_bar">
+        <h3 class="nav">
+            <button class="nav_link" routerLink="/AAGF">Home</button>
+            <button class="nav_link" routerLink="/AAGF/games">Games</button>
+            <button class="nav_link" routerLink="/AAGF/films">Films</button>
+            <button class="nav_link" routerLink="/AAGF/about_us">About us</button>
+            <button class="logout" routerLink="/">Logout</button>
+        </h3>
+    </div>
+    <div class="film" *ngFor="let f of film">
+        <img src="{{f.fields.link}}" alt="" class="film_photo">
+        <div class="filmfull">
+            <h2 class="film_name">{{f.fields.name}}</h2>
+            <p class="film_description">{{f.fields.description}}</p>
+        </div>
+    </div>
+</div>

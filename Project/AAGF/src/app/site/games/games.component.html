@@ -10,14 +10,14 @@
     </div>
     <div class="games_page">
         <div class="gamesList">
-            <table >
-                <tr *ngFor="let games of gamesall; let i = index" >
+            <table>
+                <tr *ngFor="let games of gamesall; let i = index">
                     <td>
-                        <img width="200px" src="{{games.link}}">
+                        <img width="200px" src="{{games.fields.link}}" routerLink="{{games.fields.name}}">
                     </td>
                     <td>
-                        <h3>{{games.name}}</h3>
-                        <p>{{games.description}}</p>
+                        <h3>{{games.fields.name}}</h3>
+                        <p>{{games.fields.description}}</p>
                     </td>
                 </tr>
             </table>

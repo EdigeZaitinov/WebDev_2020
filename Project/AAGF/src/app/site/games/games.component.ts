@@ -7,9 +7,10 @@ import { GamesService } from 'src/app/games.service';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-  public gamesall = [];
+  public gamesall=[];
 
-  constructor(private gameService: GamesService) { }
+  constructor(private gameService: GamesService) {
+   }
 
   ngOnInit(): void {
     this.gameService.getGames_2020().subscribe(data => this.gamesall = data);
@@ -27,7 +28,7 @@ export class GamesComponent implements OnInit {
     this.gameService.getGames_2018().subscribe(data => this.gamesall = data);
   }
 
-  btn_games2017(): void {
+  btn_games2017(){
     this.gameService.getGames_2017().subscribe(data => this.gamesall = data);
   }
 }

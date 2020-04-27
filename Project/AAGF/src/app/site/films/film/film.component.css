@@ -28,6 +28,10 @@
     margin-left: 30px;
 }
 
+.nav_link:hover {
+    background-color: tomato;
+}
+
 .logout {
     float: right;
     width: 150px;
@@ -37,43 +41,49 @@
     background-color: rgb(0, 119, 255);
 }
 
-.nav_link:hover {
-    background-color: tomato;
-}
-
 .logout:hover {
     background-color: violet;
 }
 
-.films_page {
+.film {
     position: absolute;
+    width: 80%;
+    height: 500px;
     margin-top: 80px;
-    margin-left: -10px;
-    padding-right: 10px;
+    margin-left: 10%;
+}
+
+.film_photo {
+    position: absolute;
+    margin-top: 50px;
+    height: 300px;
+    width: 250px;
+}
+
+.filmfull {
+    position: absolute;
+    height: 500px;
+    width: 70%;
+    margin-left: 300px;
+}
+
+.film_name {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.film_description {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 100px;
+    height: 450px;
     width: 100%;
 }
 
-.filmsList {
+.video {
     position: absolute;
-    margin-left: 10%;
-    width: 70%;
-}
-
-.filmsNav {
-    position: absolute;
-    margin-left: 80%;
-    width: 20%;
-}
-
-.filmsButton {
-    margin-top: 10px;
-    margin-left: 20%;
-    border-radius: 10px;
-    background-color: rgb(146, 206, 55);
-    width: 150px;
-    height: 30px;
-}
-
-.filmsButton:hover {
-    background-color: tomato;
+    height: 300px;
+    width: 500px;
+    margin-top: 300px;
 }
