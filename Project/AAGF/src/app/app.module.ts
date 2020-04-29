@@ -14,6 +14,7 @@ import { AboutUsComponent } from './site/about-us/about-us.component';
 import { GamesService } from './games.service';
 import { GameComponent } from './site/games/game/game.component';
 import { FilmComponent } from './site/films/film/film.component';
+import { RegistrationComponent } from './login/registration/registration.component';
 
 const appRoutes:Routes=[
   {path:'',component:LoginComponent},
@@ -22,7 +23,8 @@ const appRoutes:Routes=[
   {path:'AAGF/games/:gameName',component:GameComponent},
   {path:'AAGF/films',component:FilmsComponent},
   {path:'AAGF/films/:filmName',component:FilmComponent},
-  {path:'AAGF/about_us',component:AboutUsComponent}
+  {path:'AAGF/about_us',component:AboutUsComponent},
+  {path:'Registration',component:RegistrationComponent}
 ]
 
 @NgModule({
@@ -34,7 +36,8 @@ const appRoutes:Routes=[
     GamesComponent,
     AboutUsComponent,
     GameComponent,
-    FilmComponent
+    FilmComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

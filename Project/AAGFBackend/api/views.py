@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import GamesCategory,Games,FilmsCategory,Films
+from .models import GamesCategory,Games,FilmsCategory,Films,AAGFUsers
 from django.http import JsonResponse,HttpResponse
 from django.core import serializers
 
@@ -42,4 +42,23 @@ def get_film_by_name(request,filmName):
     film=Films.objects.filter(name=filmName)[:1]
     data=serializers.serialize('json',film)
     return HttpResponse(data)
+
+def create_user(request,user_email,user_password):
+   if request.method == "POST":
+        user = AAGFUsers()
+        user.email = request.POST.get(user_email)
+        user.password = request.POST.get(user_password)
+        user.save()
+
+def get_users(request):
+    users=AAGFUsers.objects.all()
+    data=serializers.serialize('json',users)
+    return HttpResponse(data)
+
+def get_user(request,user_email,user_password):
+    user=AAGFUsers.objects.filter(email=user_email,password=user_password)[:1]
+    data=serializers.serialize('json',user)
+    return HttpResponse(data)
+
+
 

@@ -1,13 +1,13 @@
 .container {
     position: absolute;
-    background-image: url(images/batlefield.jpeg);
+    background-image: url(../images/batlefield.jpeg);
     width: 100%;
     margin-left: -10px;
     padding-right: 10px;
     height: 100%;
 }
 
-.login {
+.registration {
     width: 400px;
     height: 500px;
     position: absolute;
@@ -17,12 +17,13 @@
     border-radius: 20px;
 }
 
-.log {
+.reg {
     margin-top: 60px;
     margin-left: 50px;
 }
 
-.log_btn {
+.reg_btn {
+    margin-top: 60px;
     margin-left: 70px;
 }
 
@@ -53,11 +54,4 @@
 
 .inp {
     border-radius: 10px;
-}
-
-.bot {
-    margin-top: 50px;
-    font-family: cursive;
-    font-size: 20px;
-    margin-left: -10px;
 }
